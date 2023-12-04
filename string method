@@ -21,5 +21,16 @@ public class Main {
             NameBackwards+=NameReverse.charAt(i-1);
         }
         System.out.println(NameBackwards);
+
+        String NameCap = "";
+        for(int i=0; i < NameBackwards.length();i++) {
+            int character = NameBackwards.charAt(i);
+            if (character >= 97 && character < 123) ;
+            {
+                character -= 32;
+            }
+            NameCap+=(char)character;
+        }
+        System.out.print(NameCap);
     }
 }
