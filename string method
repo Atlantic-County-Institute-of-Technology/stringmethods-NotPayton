@@ -10,15 +10,9 @@ public class Main {
     
         Scanner Scan = new Scanner(System.in);
         System.out.println("Enter Your Name: ");
-        String name = scan.netLine();
+        String name = Scan.nextLine();
         for(int i =name.length();i>0;--i) {
             System.out.print(name.charAT(i-1));
         }
-
-        for(int i=name.length();i>0;--i) {
-            ascii = Character.toChars(name);
-            System.out.print(ascii);
-        }
-
     }
 }
