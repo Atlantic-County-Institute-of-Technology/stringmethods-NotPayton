@@ -44,5 +44,11 @@ public class Main {
           NameCamel+=(char)letter;
         } 
       System.out.println(NameCamel);
+
+      String Ascii = "";
+      for (int i = 0; Name.length(); i++) {
+        Ascii+=(int)Name.charAt(i) + " ";
+      }
+      System.out.println(Ascii);
     }
 }
