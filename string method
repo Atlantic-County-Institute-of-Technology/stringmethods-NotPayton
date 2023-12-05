@@ -7,7 +7,7 @@ public class Main {
         //Creates blank string then converts each number to character then prints out the string
         String Translate;
         for (int i : num) {
-            Blank = Character.toString((char) i);
+            Translate = Character.toString((char) i);
             System.out.print(Translate);
         }
 
@@ -16,12 +16,16 @@ public class Main {
         System.out.print("Enter Your Name: ");
         String Name = Scan.nextLine();
 
+      //Creates a empty string index's the list making the front the back and vise versa. 
+      //Then Prints out the name Backwards
         String NameBackwards = "";
         for (int i = Name.length(); i > 0; --i) {
             NameBackwards+=Name.charAt(i-1);
         }
         System.out.println(NameBackwards);
 
+      //Creates emtpy string,uses the old list makes each character 
+      //uppercase then prints out the string
         String NameCap = "";
         for(int i=0; i < NameBackwards.length();i++) {
             int character = NameBackwards.charAt(i);
@@ -31,8 +35,10 @@ public class Main {
             }
             NameCap+=(char)character;
         }
-        System.out.print(NameCap);
+        System.out.println(NameCap);
 
+      //Creates empty string, uses old list again but checks if the character odd or even
+      // and makes the even uppercase and makes the odd a lowercase letter 
         String NameCamel = "";
         for (int i = 0; i < Name.length(); i++) {
             int letter = Name.charAt(i); 
@@ -45,10 +51,12 @@ public class Main {
         } 
       System.out.println(NameCamel);
 
+      //Creates Ascii string set to blank, steps throught the list as per usual,
+      //converts to interger back to char 
       String Ascii = "";
-      for (int i = 0; Name.length(); i++) {
+      for (int i = 0; i < Name.length(); i++) {
         Ascii+=(int)Name.charAt(i) + " ";
-      }
+                     }
       System.out.println(Ascii);
     }
 }
